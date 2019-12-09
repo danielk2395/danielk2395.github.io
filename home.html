@@ -27,13 +27,26 @@
 
 	.change {
 		font-size: 60px; 
+		margin-left: 20px;
 	}
+
+	.selfie { 
+		height: auto; 
+		width: auto; 
+	}
+
+	
 
 	@media screen and (max-width: 500px) { 
 		.change{ 
-			font-size: 12px; 
-			text-align: center; 
+			font-size: 24px; 
+			text-align: left; 
+			margin-left: -50px; 
 		} 
+		.selfie { 
+			height: 60%; 
+			width: 60%; 
+		}
 		.pad{ 
 			font-size: 40px; 
 			text-align: center; 
@@ -151,10 +164,10 @@
 			<table style="margin: 0px auto; float: none;">
 			<tr>
 				<td>
-					<img src="Katie.jfif" style="padding-left: 5%;"> 
+					<img class="selfie" src="Katie.jfif" style="padding-left: 5%;"> 
 				</td>
 				<td>	
-					<span class="change" style="margin-left: 20px;">Kaitlyn Daniel &nbsp </span>
+					<span class="change" >Kaitlyn Daniel &nbsp </span>
 				</td>
 			</tr>
 			</table>
