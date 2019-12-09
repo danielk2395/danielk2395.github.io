@@ -1,0 +1,170 @@
+<html>
+<head>
+	<title>Katie Daniel Portfolio</title>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="cs/style.css" />
+		<link rel="stylesheet" type="text/css" href="cs/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+	<link rel="stylesheet" href="bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+	<style>
+		.jumbotron {
+		background: Black; /* Orange */
+		color: black;
+	}	
+	 .footer {
+      background: black;
+      color: black;
+      padding: 15px;
+    }
+		
+	</style>
+	<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<style>
+		a{
+			color: white; 
+		}
+		.list {
+			margin: 10px; 
+			border: 4px solid black; 
+		}
+
+		li.list:hover{
+			background: pink; 
+		}
+
+		.left { 
+			margin-left: 10px; 
+		}
+		</style>
+</head>
+
+<body>
+<!---div align="center"><h2>Test Query</h2></div-->
+<!--nav class="navbar navbar-inverse"-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <a class="navbar-brand" href="index.html">Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="work.html">Collection of Work</a></li>
+      <li class="active"><a href="courses.html">Courses</a></li>
+      <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+		<div class="container">
+			<div class="row content text-center">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Courses Relevant to School Counseling<h1>	
+				</div>
+			</div>
+			<div class="row content">
+				<div class="col-lg-6 col-lg-offset-3">
+                    <table class="table" style="font-size: 16px;">
+                            <thead>
+                                <tr>
+                                <th>Course</th>
+                                <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Social & Cultural Foundations</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Professional Orientation</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Human Development & Psychopathology</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Counseling Theories</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Group Counseling</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Theory & Practice of Human Appraisal</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Counseling Techniques & Human Appraisal</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Research Writing or Research Course</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Interventions: Current Issues in School Counseling</td>
+                                <td>A</td>
+                                </tr>
+                                <tr>
+                                <td>Career & Lifestyle Development</td>
+                                <td>A</td>
+                                </tr>            
+                                <tr>
+                                <td>Diagnosis & Treatment Planning in Mental Health Counseling</td>
+                                <td>A</td>
+                                </tr>   
+                                <tr>
+                                <td>Org & Admin of School Counseling Programs</td>
+                                <td>B</td>
+                                </tr>   
+                            </tbody>
+                    </table>
+				</div>
+			</div><!-- content -->
+		</div><!-- container -->
+		<div class="container">
+		<br><br>
+		</div>
+</body>
+</html>

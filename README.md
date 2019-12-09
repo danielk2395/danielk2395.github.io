@@ -1,2 +1,2 @@
-# danielk2395.github.io
-My Portfolio
+# reinholtk24.github.io
+Sharing Website Ideas Without Deploying

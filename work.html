@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Katie Daniel Portfolio</title>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="cs/style.css" />
+		<link rel="stylesheet" type="text/css" href="cs/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+	<link rel="stylesheet" href="bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+	<style>
+		.jumbotron {
+		background: Black; /* Orange */
+		color: black;
+	}	
+	 .footer {
+      background: black;
+      color: black;
+      padding: 15px;
+    }
+		
+	</style>
+	<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<style>
+		a{
+			color: white; 
+		}
+		.list {
+			margin: 10px; 
+			border: 4px solid black; 
+		}
+
+		li.list:hover{
+			background: pink; 
+		}
+
+		.left { 
+			margin-left: 10px; 
+		}
+		</style>
+</head>
+
+<body>
+<!---div align="center"><h2>Test Query</h2></div-->
+<!--nav class="navbar navbar-inverse"-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <a class="navbar-brand" href="index.html">Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li class="active"><a href="work.html">Collection of Work</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="resume.pdf">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+		<div class="container">
+			<div class="row content text-center">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1>Collection of Work<h1>	
+				</div>
+			</div>
+			<div class="row content">
+				<div class="col-lg-6 col-lg-offset-3">
+					<ul style="list-style-type:none;">
+							<a href="pdf/SchoolDataProfileExamination&D.A.T.A.Example.pdf"><li class="list"><h2 class="left">Counseling with Quantitative Analysis</h2></li></a>
+							<a href="pdf/ClosingTheGapActivityExample.pdf"><li class="list"><h2 class="left">Closing the Gap Activity</h2></li></a>
+							<a href="pdf/GiftedStudentsNeedsConsideration.pdf"><li class="list"><h2 class="left">Counseling Students who are Gifted</h2></li></a>	
+							<a href="pdf/CaseStudy.pdf"><li class="list"><h2 class="left">Case Study</h2></li></a>
+							<a href="pdf/LessonPlanES_Example.pdf"><li class="list"><h2 class="left">Lesson Plan</h2></li></a>
+							<a href="pdf/SchoolCounselorRoleInCrisis.pdf"><li class="list"><h2 class="left">The Counselor's Role During Crisis</h2></li></a>
+							<a href="pdf/SMART_Goal&Vission_MissionStatementExample.pdf"><li class="list"><h2 class="left">Goal, Mission, Vision Statement</h2></li></a>
+							<a href="pdf/TimeManagementLessonPlan.pdf"><li class="list"><h2 class="left">Time Management Lesson Plan</h2></li></a>	
+					</ul>
+				</div>
+			</div><!-- content -->
+		</div><!-- container -->
+		<div class="container">
+		<br><br>
+		</div>
+</body>
+</html>
