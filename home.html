@@ -38,23 +38,38 @@
 			font-size: 40px; 
 			text-align: center; 
 		}
+	
 	} 
 
 	@media screen and (min-width: 501px) { 
 		.change{ 
-			font-size: 30px; 
+			font-size: 35px; 
 			text-align: center; 
 		} 
 		.pad{ 
-			font-size: 20px; 
+			font-size: 40px; 
 			text-align: center; 
 		}
+		
+	
+			
 	} 
 	@media screen and (min-width: 802px) { 
 		.change{ 
 			font-size: 50px; 
 			text-align: center; 
 		} 
+		.box{
+		margin: 20px; 
+		border: 3px solid black; 
+		min-width: 120px;
+		} 
+		.scaler{
+		padding-left: 10px; 
+		padding-right: 10px; 
+	
+		}
+		
 		
 	} 
 	@media screen and (min-width: 1000px) { 
@@ -67,6 +82,7 @@
 	.scaler{
 		padding-left: 30px; 
 		padding-right: 30px; 
+	
 	}
 
 	div.box:hover{
@@ -74,8 +90,9 @@
 	}
 
 	.box{
-		margin: 30px; 
+		margin: 20px; 
 		border: 3px solid black; 
+		min-width: 180px; 
 		
 	}
 
@@ -147,10 +164,10 @@
 			
 		</div>
 	</div>
-	<div class="row content text-center" style="margin-top: 5px; margin-bottom:10px;">
+	<div class="row content " style=" margin-top: 5px; margin-bottom:10px;">
 		<div class="col-lg-3  col-xs-1"></div>
-		<div class="col-lg-6   col-md-12 col-xs-12 ">
-			<h4>Hello! My name is Katie and I aspire to be the best school counselor I can be! This portfolio consists of work I have done in preparation to achieve my goal.  </h4>
+		<div class="col-lg-6  col-md-12 col-xs-12 text-center" >
+			<h3 >Hello! My name is Katie and I aspire to be the best school counselor I can be! This portfolio consists of work I have done in preparation to achieve my goal.  </h4>
 		</div>
 		<div class="col-lg-3 "></div>
 	</div>
@@ -159,28 +176,28 @@
 		</div>
   <div class="row content text-center" style="background: white;">
 
-	<div class="col-lg-4   col-xs-12 col-sm-4 scaler" style="padding:40px; color: black; "> 
+	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 scaler" style=" color: black; "> 
 		<a href="work.html" style="color: black;">
-		<div class="responsive box">
+		<div class="box">
 		<h1 class="pad">Work</h1>
-		<img class="img-responsive icon" style="margin:auto; margin-top: 20px;margin-bottom:10px; height:256px; width:256px;" src="bag.png" />
+		<img class="img-responsive icon" style="margin:auto;min-width:150px; margin-top: 20px;margin-bottom:10px; height:256px; width:256px;" src="bag.png" />
 		</div></a>
 	</div>
 	<!--div class="col-lg-1"></div-->
-	<div class="col-lg-4 col-xs-12 col-sm-4 scaler" style="color: black; padding:40px; ">
+	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 scaler" style="color: black;  ">
 			<a href="courses.html" style="color: black;">
 		<div class="box">
 			<h1 class="pad">Courses</h1>	
-			<img class="img-responsive icon" style="margin:auto; margin-top: 20px;margin-bottom:10px; height:256px; width:256px;" src="checklist.png" />
+			<img class="img-responsive icon" style="margin:auto; min-width:150px; margin-top: 20px;margin-bottom:10px; height:256px; width:256px;" src="checklist.png" />
 		</div>
 		</a>
 	</div>
 
-	<div class="col-lg-4 col-xs-12 col-sm-4 scaler" style="padding:40px; color: black;"> 
+	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4  scaler" style=" color: black;"> 
 		<a href="resume.pdf" style="color: black;">
 		<div class="box">
 			<h1 class="pad">Resume</h1>
-			<img class="img-responsive icon" style="margin:auto;margin-top: 20px; margin-bottom:10px; height:256px; width:256px;" src="resume.png" />
+			<img class="img-responsive icon" style="margin:auto;margin-top: 20px; margin-bottom:10px; min-width:150px; height:256px; width:256px;" src="resume.png" />
 		</div>
 		</a>
 	</div>
@@ -189,7 +206,7 @@
   <div class="row content" style="background: white;">
 	  <br>
   </div>
-</div>
+
 
 <footer class="footer" style="background: #222222;"> 
 	<div class="conainer-fluid text-center">
@@ -204,5 +221,6 @@
 		
 	</div>
   <footer>  
+</div>
 </body>
 </html>
